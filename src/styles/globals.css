@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.theme {
+		@apply theme-text theme-selection;
+	}
+
+	.theme-inverted {
+		@apply theme-inverted-text theme-inverted-selection;
+	}
+
+	.theme-text {
+		@apply bg-primary-light text-accent-light dark:bg-primary-dark dark:text-accent-dark;
+	}
+
+	.theme-inverted-text {
+		@apply bg-accent-light text-primary-light dark:bg-accent-dark dark:text-primary-dark;
+	}
+
+	.theme-selection {
+		@apply selection:theme-inverted-text;
+	}
+
+	.theme-inverted-selection {
+		@apply selection:theme-text;
+	}
+
+	.theme-border {
+		@apply border-accent-light dark:border-accent-dark;
+	}
+
+	.theme-interactable {
+		@apply hover:theme-inverted focus-within:theme-inverted active:theme-inverted focus:theme-inverted theme-border border-2 p-1 transition;
+	}
+
+	.theme-inverted-interactable {
+		@apply hover:theme focus-within:theme active:theme focus:theme theme-inverted theme-border border-2 p-1 transition;
+	}
+
+	.flex-center {
+		@apply flex items-center justify-center;
+	}
+}
+
+/* a11y is fine because selectable elements will glow */
+
+*:focus {
+	outline: none;
+}
