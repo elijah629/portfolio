@@ -1,5 +1,11 @@
+import nextPwa from "@murkrage/next-pwa";
+
+const withPWA = nextPwa({
+	dest: "public"
+});
+
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+const nextConfig = withPWA({
 	experimental: {
 		appDir: true
 	},
@@ -14,6 +20,6 @@ const nextConfig = {
 			}
 		]
 	}
-};
+});
 
 export default nextConfig;
