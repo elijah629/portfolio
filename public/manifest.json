@@ -3,6 +3,10 @@
 	"start_url": "/",
 	"name": "Elijah629's Portfolio",
 	"short_name": "Elijah629",
+	"theme_color": "#1dafa1",
+	"background_color": "#000000",
+	"display": "standalone",
+	"orientation": "portrait",
 	"icons": [
 		{
 			"src": "/android-chrome-192x192.png",
@@ -15,9 +19,5 @@
 			"sizes": "512x512",
 			"type": "image/png"
 		}
-	],
-	"theme_color": "#1dafa1",
-	"background_color": "#000000",
-	"display": "standalone",
-	"orientation": "portrait"
+	]
 }

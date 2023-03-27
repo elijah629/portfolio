@@ -1,9 +1,10 @@
+import "@styles/globals.css";
+
 import { Footer } from "@components/Footer";
 import { Header } from "@components/Header";
 import { withFavicon } from "@lib/favicon";
 import { metaplug } from "@lib/metaplug";
 import { withPWA } from "@lib/pwa";
-import "@styles/globals.css";
 import { Space_Grotesk } from "next/font/google";
 
 const font = Space_Grotesk({
