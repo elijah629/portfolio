@@ -14,11 +14,9 @@
 		"@murkrage/next-pwa": "^5.7.1",
 		"@tabler/icons-react": "2.11.0",
 		"next": "latest",
-		"next-with-workbox": "^3.0.5",
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
 		"react-random-reveal": "2.0.0",
-		"swr": "2.1.1",
 		"yaml": "2.2.1"
 	},
 	"devDependencies": {
