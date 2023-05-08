@@ -5,9 +5,9 @@ const withPWA = nextPwa({
 });
 
 /** @type {import('next').NextConfig} */
-const nextConfig = withPWA({
+const typedCFG = {
 	experimental: {
-		appDir: true
+		serverActions: true
 	},
 	reactStrictMode: true,
 	images: {
@@ -20,6 +20,8 @@ const nextConfig = withPWA({
 			}
 		]
 	}
-});
+};
+
+const nextConfig = withPWA(typedCFG);
 
 export default nextConfig;

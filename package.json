@@ -1,6 +1,6 @@
 {
-	"name": "elijah629.github.io",
-	"version": "0.1.0",
+	"name": "portfolio",
+	"version": "1.1.0",
 	"private": true,
 	"scripts": {
 		"dev": "next dev",
@@ -13,27 +13,27 @@
 	"dependencies": {
 		"@murkrage/next-pwa": "^5.7.1",
 		"@tabler/icons-react": "^2.17.0",
-		"next": "^13.3.1",
+		"next": "13.4.1",
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
-		"react-random-reveal": "2.0.0",
+		"react-random-reveal": "^2.0.0",
 		"yaml": "^2.2.2"
 	},
 	"devDependencies": {
-		"@types/node": "^18.16.0",
-		"@types/react": "^18.0.38",
-		"@types/react-dom": "18.0.11",
+		"@types/node": "20.1.0",
+		"@types/react": "18.2.6",
+		"@types/react-dom": "18.2.4",
+		"tailwindcss": "3.3.2",
+		"typescript": "5.0.4",
+		"postcss": "8.4.23",
 		"autoprefixer": "10.4.14",
+		"eslint": "8.40.0",
+		"eslint-config-next": "13.4.1",
 		"concurrently": "^8.0.1",
-		"eslint": "^8.39.0",
-		"eslint-config-next": "^13.3.1",
-		"eslint-plugin-prettier": "4.2.1",
-		"postcss": "^8.4.23",
+		"eslint-plugin-prettier": "^4.2.1",
 		"prettier": "^2.8.8",
-		"prettier-plugin-organize-imports": "3.2.2",
-		"prettier-plugin-tailwindcss": "^0.2.7",
-		"tailwind-scrollbar": "^3.0.0",
-		"tailwindcss": "^3.3.1",
-		"typescript": "^5.0.4"
+		"prettier-plugin-organize-imports": "^3.2.2",
+		"prettier-plugin-tailwindcss": "^0.2.8",
+		"tailwind-scrollbar": "^3.0.0"
 	}
 }

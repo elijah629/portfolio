@@ -21,7 +21,6 @@
 		],
 		"baseUrl": ".",
 		"paths": {
-			"@styles/*": ["src/styles/*"],
 			"@components/*": ["src/components/*"],
 			"@app/*": ["src/app/*"],
 			"@assets/*": ["src/assets/*"],
