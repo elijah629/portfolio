@@ -5,23 +5,13 @@ const withPWA = nextPwa({
 });
 
 /** @type {import('next').NextConfig} */
-const typedCFG = {
+const config = {
 	experimental: {
 		serverActions: true
 	},
-	reactStrictMode: true,
-	images: {
-		remotePatterns: [
-			{
-				protocol: "https",
-				hostname: "i.imgur.com",
-				port: "",
-				pathname: "/**"
-			}
-		]
-	}
+	reactStrictMode: true
 };
 
-const nextConfig = withPWA(typedCFG);
+const nextConfig = withPWA(config);
 
 export default nextConfig;

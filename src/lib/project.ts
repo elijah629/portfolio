@@ -4,8 +4,8 @@ import { parse as parseYAML } from "yaml";
 export interface Project {
 	title: string;
 	description: string;
-	url: URL;
-	image: URL;
+	url: string;
+	image: string;
 	tags: string[];
 	slug: string;
 }
@@ -25,13 +25,13 @@ export async function getProject(slug: string): Promise<Project> {
 
 	if (error) throw error;
 
-	const data: Project = parseYAML(_data!.toString());
+	const data: Record<string, any> = parseYAML(_data!.toString());
 
 	return {
 		title: data.title,
 		description: data.description,
-		url: new URL(data.url),
-		image: new URL(data.image),
+		url: data.url,
+		image: data.image,
 		tags: data.tags,
 		slug
 	};

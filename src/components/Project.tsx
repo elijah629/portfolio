@@ -13,14 +13,14 @@ export const Project: React.FunctionComponent<ProjectProps> = (
 		<Link
 			target="_blank"
 			rel="noopener noreferrer"
-			href={props.project.url.href}
+			href={props.project.url}
 			className="theme-border flex h-full flex-1 flex-col border-2"
 			key={props.project.slug}>
 			<div className="min-h-[150px] flex-1">
 				<div className="relative h-full overflow-hidden">
 					<Image
 						fill
-						src={props.project.image.href}
+						src={props.project.image}
 						alt={props.project.title}
 						className="object-cover transition duration-1000 sm:object-scale-down sm:hover:scale-110"
 					/>

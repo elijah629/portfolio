@@ -1,6 +1,6 @@
 title: "Bagel"
 description: "Connect with anyone!"
-image: https://i.imgur.com/aA7Zj3k.png
+image: /images/bagel.png
 url: https://bagel.vercel.app
 tags:
     - chat

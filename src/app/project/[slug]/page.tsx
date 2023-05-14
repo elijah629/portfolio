@@ -20,7 +20,7 @@ export default async function ProjectPage({
 		notFound();
 	}
 
-	const project = await getProject(slug).catch(() => notFound());
+	const project = await getProject(slug).catch(notFound)
 
 	return (
 		<ProjectSlideshow
@@ -36,9 +36,7 @@ export async function generateMetadata({
 }: {
 	params: { slug: string };
 }): Promise<Metadata> {
-	const project = await getProject(decodeURIComponent(params.slug)).catch(
-		() => notFound()
-	);
+	const project = await getProject(decodeURIComponent(params.slug)).catch(notFound);
 	return {
 		title: `Project | ${project.title}`,
 		description: project.description
@@ -47,5 +45,5 @@ export async function generateMetadata({
 
 export async function generateStaticParams() {
 	const projects = await fs.readdir(path.join("projects"));
-	return projects.map(x => ({ slug: x.replace(".yml", "") }));
+	return projects.map(x => ({ slug: path.parse(x).name }));
 }
