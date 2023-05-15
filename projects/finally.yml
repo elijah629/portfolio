@@ -1,7 +1,8 @@
 title: "Finally"
-description: "A NextJS template I use for my website"
+description: "My NextJS template"
 image: /images/finally.png
 url: https://github.com/Elijah629/finally
+repo: https://github.com/Elijah629/finally
 tags:
     - nextjs
     - template

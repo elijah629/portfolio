@@ -1,11 +1,11 @@
 "use server";
 
-import { Project } from "@components/Project";
 import { ProjectButtons } from "@components/ProjectButtons";
-import { Project as IProject } from "@lib/project";
+import { ProjectDisplay } from "@components/ProjectDisplay";
+import { Project } from "@lib/project";
 
 interface ProjectSlideshowProps {
-	project: IProject;
+	project: Project;
 	previous: string | null;
 	next: string | null;
 }
@@ -13,7 +13,7 @@ interface ProjectSlideshowProps {
 export const ProjectSlideshow = (props: ProjectSlideshowProps) => {
 	return (
 		<div className="flex h-full flex-col gap-4 overflow-hidden">
-			<Project project={props.project} />
+			<ProjectDisplay project={props.project} />
 			<ProjectButtons
 				next={props.next}
 				previous={props.previous}

@@ -11,22 +11,22 @@ export default async function ProjectPage({
 	params: { slug: string };
 }) {
 	const slug = decodeURIComponent(params.slug);
-	const projects = (await fs.readdir(path.join("projects")))
+	const slugs = (await fs.readdir(path.join("projects")))
 		.map(x => x.replace(".yml", ""))
 		.sort();
 
-	const index = projects.indexOf(slug);
+	const index = slugs.indexOf(slug);
 	if (index === -1) {
 		notFound();
 	}
 
-	const project = await getProject(slug).catch(notFound)
+	const project = await getProject(slug).catch(notFound);
 
 	return (
 		<ProjectSlideshow
 			project={project}
-			previous={index === 0 ? null : projects[index - 1]}
-			next={index === projects.length ? null : projects[index + 1]}
+			previous={index === 0 ? null : slugs[index - 1]}
+			next={index === slugs.length ? null : slugs[index + 1]}
 		/>
 	);
 }
@@ -36,7 +36,9 @@ export async function generateMetadata({
 }: {
 	params: { slug: string };
 }): Promise<Metadata> {
-	const project = await getProject(decodeURIComponent(params.slug)).catch(notFound);
+	const project = await getProject(decodeURIComponent(params.slug)).catch(
+		notFound
+	);
 	return {
 		title: `Project | ${project.title}`,
 		description: project.description

@@ -1,7 +1,5 @@
 import {
-	IconBrandBlender,
 	IconBrandCSharp,
-	IconBrandJavascript,
 	IconBrandNextjs,
 	IconBrandPrisma,
 	IconBrandPython,
@@ -39,8 +37,6 @@ export default async function Page() {
 					<IconBrandTailwind />
 					<IconBrandCSharp />
 					<IconBrandPython />
-					<IconBrandBlender />
-					<IconBrandJavascript />
 				</div>
 			</div>
 		</div>

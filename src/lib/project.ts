@@ -7,10 +7,11 @@ export interface Project {
 	url: string;
 	image: string;
 	tags: string[];
+	repo: string;
 	slug: string;
 }
 
-async function read(path: string): Promise<{ data?: Buffer; error?: any }> {
+async function fsRead(path: string): Promise<{ data?: Buffer; error?: any }> {
 	let data: any;
 	let error: any;
 	await fs
@@ -21,18 +22,19 @@ async function read(path: string): Promise<{ data?: Buffer; error?: any }> {
 }
 
 export async function getProject(slug: string): Promise<Project> {
-	const { data: _data, error } = await read(`projects/${slug}.yml`);
+	const { data, error } = await fsRead(`projects/${slug}.yml`);
 
 	if (error) throw error;
 
-	const data: Record<string, any> = parseYAML(_data!.toString());
+	const project: Record<string, any> = parseYAML(data!.toString());
 
 	return {
-		title: data.title,
-		description: data.description,
-		url: data.url,
-		image: data.image,
-		tags: data.tags,
+		title: project.title,
+		description: project.description,
+		url: project.url,
+		image: project.image,
+		tags: project.tags,
+		repo: project.repo,
 		slug
 	};
 }
