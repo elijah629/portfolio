@@ -1,8 +1,7 @@
 import nextPwa from "@murkrage/next-pwa";
 
 const withPWA = nextPwa({
-	dest: "public",
-	disable: process.env.NODE_ENV === "development"
+	dest: "public"
 });
 
 /** @type {import('next').NextConfig} */
@@ -13,6 +12,7 @@ const config = {
 	reactStrictMode: true
 };
 
-const nextConfig = withPWA(config);
+const nextConfig =
+	process.env.NODE_ENV === "development" ? config : withPWA(config);
 
 export default nextConfig;

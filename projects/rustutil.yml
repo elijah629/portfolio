@@ -1,5 +1,5 @@
 title: "rustutil"
-description: "A portable way to use GDI+ from a script"
+description: "A utility management program for rust."
 image: /images/rustutil.png
 url: https://github.com/rustutil/
 repo: https://github.com/rustutil/rustutil

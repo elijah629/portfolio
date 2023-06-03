@@ -32,7 +32,7 @@
 	}
 
 	.theme-interactable {
-		@apply hover:theme-inverted focus-within:theme-inverted active:theme-inverted focus:theme-inverted theme-border border-2 p-1 transition;
+		@apply sm:hover:theme-inverted sm:focus-within:theme-inverted sm:active:theme-inverted sm:focus:theme-inverted theme-border border-2 p-1 sm:transition;
 	}
 
 	.theme-inverted-interactable {

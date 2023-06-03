@@ -42,8 +42,8 @@ export const ProjectDisplay: React.FunctionComponent<ProjectDisplayProps> = (
 				</Link>
 			</div>
 			<div className="theme-border flex border-t-2 p-2">
-				<div className="flex flex-1 flex-col">
-					<div className="flex gap-4">
+				<div className="flex flex-1 flex-col gap-2">
+					<div className="flex items-center gap-4">
 						<Link
 							href={props.project.url}
 							target="_blank"
@@ -56,7 +56,7 @@ export const ProjectDisplay: React.FunctionComponent<ProjectDisplayProps> = (
 								<span
 									key={x}
 									className="theme-border theme-inverted border-2 p-1 font-bold">
-									#{x}
+									{x}
 								</span>
 							))}
 						</div>
