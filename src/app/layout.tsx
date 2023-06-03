@@ -5,11 +5,11 @@ import { Header } from "@components/Header";
 import { withFavicon } from "@lib/favicon";
 import { metaplug } from "@lib/metaplug";
 import { withPWA } from "@lib/pwa";
-import { Space_Grotesk } from "next/font/google";
+import { JetBrains_Mono } from "next/font/google";
 
-const font = Space_Grotesk({
-	subsets: ["latin"]
-});
+//  Space_Grotesk({ subsets: ["latin"] });
+
+const font = JetBrains_Mono({ weight: "variable", subsets: ["latin"] });
 
 export const metadata = metaplug(
 	{
@@ -29,7 +29,7 @@ export default function RootLayout({
 			lang="en"
 			className="h-full">
 			<body
-				className={`theme flex h-full flex-col gap-2 ${font.className}`}>
+				className={`theme flex h-full flex-col gap-2 tracking-tighter ${font.className}`}>
 				<div className="flex flex-1 flex-col gap-4 p-2">
 					<Header />
 					<main className="flex-1">{children}</main>
