@@ -1,5 +1,9 @@
 import { Project } from "@lib/project";
-import { IconBrandGithub } from "@tabler/icons-react";
+import {
+	IconArrowLeftBar,
+	IconArrowRight,
+	IconBrandGithub
+} from "@tabler/icons-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -26,20 +30,34 @@ export const ProjectDisplay: React.FunctionComponent<ProjectDisplayProps> = (
 						className="theme-interactable border-0 border-b-2 border-l-2 p-2"
 					/>
 				</Link>
-				<Link
-					href={props.project.url}
-					target="_blank"
-					rel="noopener noreferrer">
-					<div className="relative h-full overflow-hidden">
-						<Image
-							priority
-							fill
-							src={props.project.image}
-							alt={props.project.title}
-							className="object-cover transition duration-1000 sm:object-scale-down sm:hover:scale-110"
-						/>
-					</div>
-				</Link>
+				{props.project.image ? (
+					<Link
+						href={props.project.url}
+						target="_blank"
+						rel="noopener noreferrer">
+						<div className="relative h-full overflow-hidden">
+							<Image
+								priority
+								fill
+								src={props.project.image}
+								alt={props.project.title}
+								className="object-cover transition duration-1000 sm:object-scale-down sm:hover:scale-110"
+							/>
+						</div>
+					</Link>
+				) : (
+					<Link
+						href={props.project.url}
+						className="group flex h-full items-center justify-center">
+						<span className="flex items-center text-3xl uppercase transition group-hover:translate-x-10">
+							visit
+							<IconArrowRight
+								className="inline transition group-hover:translate-x-5"
+								size={50}
+							/>
+						</span>
+					</Link>
+				)}
 			</div>
 			<div className="theme-border flex border-t-2 p-2">
 				<div className="flex flex-1 flex-col gap-2">

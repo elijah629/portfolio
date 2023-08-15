@@ -18,16 +18,29 @@ export default async function Page() {
 		.sort();
 	return (
 		<div className="flex h-full flex-col gap-4">
-			<span>Welcome! Come and look at my</span>
-			<Link
-				href={`/project/${projects[0]}`}
-				className="w-full flex-1 text-4xl">
-				<button className="theme-interactable h-full w-full">
-					Projects
-				</button>
-			</Link>
+			<span>
+				Welcome to my site, its filled with random projects I have
+				worked on over my webdev career ( i do more than just webdev,
+				please hire me ), enjoy.
+			</span>
+			<div className="grid h-full grid-rows-2 gap-2 sm:grid-cols-2 sm:grid-rows-none">
+				<Link
+					href={`/project/${projects[0]}`}
+					className="w-full flex-1 text-4xl">
+					<button className="theme-interactable h-full w-full">
+						Slideshow
+					</button>
+				</Link>
+				<Link
+					href="/projects"
+					className="w-full flex-1 text-4xl">
+					<button className="theme-interactable h-full w-full">
+						All Projects
+					</button>
+				</Link>
+			</div>
 			<div>
-				<h2 className="text-lg">Technologies</h2>
+				<h2 className="text-lg font-bold">Stuff im good at</h2>
 				<div className="flex h-16 justify-between gap-2 overflow-auto scrollbar-thin scrollbar-thumb-accent-light dark:scrollbar-thumb-accent-dark sm:h-20 [&>*]:h-auto [&>*]:w-auto [&>*]:flex-none">
 					<IconBrandTypescript />
 					<IconBrandVercel />

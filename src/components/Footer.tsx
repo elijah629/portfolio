@@ -11,7 +11,7 @@ export const Footer: React.FunctionComponent = () => {
 	return (
 		<footer className="theme-border grid grid-cols-[1fr,auto,1fr] items-center justify-center gap-2 border-t-2 bg-secondary-light p-4 dark:bg-secondary-dark">
 			<Link
-				href="https://github.com/Elijah629"
+				href="https://github.com/elijah629"
 				target="_blank"
 				rel="noopener noreferrer"
 				className="mr-auto"

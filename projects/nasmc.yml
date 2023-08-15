@@ -1,0 +1,9 @@
+title: "nasmc"
+description: "Online x86 compiler."
+image: /images/nasmc.png
+url: https://nasmc.vercel.app
+repo: https://github.com/elijah629/nasmc
+tags:
+    - x86
+    - nasm
+    - objdump

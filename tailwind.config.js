@@ -13,8 +13,8 @@ module.exports = {
 				// "accent-light": "#000000",
 				"accent-light": "#1dafa1",
 
-				"primary-dark": "#000000",
-				"secondary-dark": "#101010",
+				"primary-dark": "#1d1e28",
+				"secondary-dark": "#16171f",
 				// "accent-dark": "#FFFFFF",
 				"accent-dark": "#1dafa1",
 

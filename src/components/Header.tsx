@@ -16,6 +16,7 @@ export const Header: React.FunctionComponent = () => {
 			<Link href="/">
 				<h1 className="text-center text-2xl">
 					&#8288;
+					<noscript>Elijah629</noscript>
 					<RandomReveal
 						isPlaying
 						duration={1}
