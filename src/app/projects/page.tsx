@@ -11,7 +11,7 @@ export default async function ProjectPage() {
 
 	return (
 		<>
-			<div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
+			<div className="grid grid-cols-2 gap-2 lg:grid-cols-5">
 				{projects.map(x => (
 					<div
 						key={x.slug}
@@ -28,7 +28,7 @@ export default async function ProjectPage() {
 						</div>
 						<Link
 							href={x.url}
-							className="theme-interactable flex aspect-square items-center justify-center text-3xl font-bold uppercase"
+							className="theme-interactable flex aspect-square items-center justify-center text-xl font-bold uppercase sm:text-2xl lg:text-3xl"
 							key={x.slug}>
 							<span className="flex items-center gap-2">
 								{x.title}
