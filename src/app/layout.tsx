@@ -5,7 +5,7 @@ import { Header } from "@components/Header";
 import { withFavicon } from "@lib/favicon";
 import { metaplug } from "@lib/metaplug";
 import { withPWA } from "@lib/pwa";
-import { Fira_Code, JetBrains_Mono } from "next/font/google";
+import { Fira_Code } from "next/font/google";
 
 const font = Fira_Code({ weight: "variable", subsets: ["latin"] });
 

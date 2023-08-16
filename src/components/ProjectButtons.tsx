@@ -1,3 +1,4 @@
+import { IconSize } from "@lib/iconSizes";
 import { IconArrowLeft, IconArrowRight, IconX } from "@tabler/icons-react";
 import Link from "next/link";
 
@@ -8,7 +9,7 @@ interface ProjectButtonsProps {
 
 const DisabledButton = (
 	<span className="theme-border flex flex-1 cursor-not-allowed justify-center p-8 text-error">
-		<IconX size={45} />
+		<IconX size={IconSize.ExtraLarge} />
 	</span>
 );
 
@@ -21,11 +22,8 @@ export const ProjectButtons: React.FunctionComponent<ProjectButtonsProps> = (
 				<Link
 					href={`/project/${props.previous}`}
 					aria-label="Previous project"
-					className="theme-interactable sm:group flex flex-1 justify-center border-0 p-8 transition-none">
-					<IconArrowLeft
-						className="relative left-0 transition-all sm:group-hover:-left-[25%]"
-						size={45}
-					/>
+					className="theme-interactable flex flex-1 justify-center border-0 p-8">
+					<IconArrowLeft size={IconSize.ExtraLarge} />
 				</Link>
 			) : (
 				DisabledButton
@@ -34,11 +32,8 @@ export const ProjectButtons: React.FunctionComponent<ProjectButtonsProps> = (
 				<Link
 					href={`/project/${props.next}`}
 					aria-label="Next project"
-					className="theme-interactable sm:group flex flex-1 justify-center border-0 p-8 transition-none">
-					<IconArrowRight
-						className="relative left-0 transition-all sm:group-hover:left-[25%]"
-						size={45}
-					/>
+					className="theme-interactable flex flex-1 justify-center border-0 p-8">
+					<IconArrowRight size={IconSize.ExtraLarge} />
 				</Link>
 			) : (
 				DisabledButton

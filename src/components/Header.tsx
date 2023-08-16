@@ -20,7 +20,7 @@ export const Header: React.FunctionComponent = () => {
 					<RandomReveal
 						isPlaying
 						duration={1}
-						characterSet={"eioklxm!#$&*1234567890".split("")}
+						characterSet={"1234567890abcdefABCDEF".split("")}
 						characters="Elijah629"
 					/>
 				</h1>

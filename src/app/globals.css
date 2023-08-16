@@ -4,15 +4,19 @@
 
 @layer components {
 	.theme {
-		@apply theme-text theme-selection;
+		@apply theme-text theme-background theme-selection;
 	}
 
 	.theme-inverted {
 		@apply theme-inverted-text theme-inverted-selection;
 	}
 
+	.theme-background {
+		@apply bg-primary-light dark:bg-primary-dark;
+	}
+
 	.theme-text {
-		@apply bg-primary-light text-accent-light dark:bg-primary-dark dark:text-accent-dark;
+		@apply text-accent-light dark:text-accent-dark;
 	}
 
 	.theme-inverted-text {

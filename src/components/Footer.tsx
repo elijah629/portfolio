@@ -3,6 +3,8 @@
 import { IconBrandGithub } from "@tabler/icons-react";
 import Link from "next/link";
 import React, { useState } from "react";
+import CopyButton from "./CopyButton";
+import { IconSize } from "@lib/iconSizes";
 
 export const Footer: React.FunctionComponent = () => {
 	const address = "0x92AF1aEEd7D8Da4051D2F80ACb11124e5495F2E3";
@@ -14,24 +16,14 @@ export const Footer: React.FunctionComponent = () => {
 				href="https://github.com/elijah629"
 				target="_blank"
 				rel="noopener noreferrer"
-				className="mr-auto"
+				className="theme-interactable mr-auto p-2"
 				aria-label="Github">
-				<IconBrandGithub
-					size={50}
-					className="theme-interactable rounded-[50%] p-2"
-				/>
+				<IconBrandGithub size={IconSize.Medium} />
 			</Link>
-			<button
+			<CopyButton
 				className="theme-interactable col-start-2"
-				onClick={() => {
-					if (window.isSecureContext) {
-						navigator.clipboard.writeText(address);
-						setText("Copied");
-					} else {
-						setText("Error");
-					}
-					setTimeout(() => setText(null), 2000);
-				}}>
+				copied={"Copied"}
+				text={address}>
 				<span
 					className="hidden sm:inline"
 					aria-label={address}>
@@ -44,7 +36,7 @@ export const Footer: React.FunctionComponent = () => {
 						? text
 						: `ETH ${address.slice(0, 6)}..${address.slice(-4)}`}
 				</span>
-			</button>
+			</CopyButton>
 		</footer>
 	);
 };

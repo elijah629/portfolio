@@ -10,6 +10,7 @@ export interface Project {
 	tags: string[];
 	repo: string;
 	slug: string;
+	timestamp: number;
 }
 
 export async function getProject(slug: string): Promise<Project> {

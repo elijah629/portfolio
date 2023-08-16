@@ -1,9 +1,22 @@
 import {
+	IconBrandCpp,
+	IconBrandGit,
+	IconBrandGithub,
+	IconBrandHtml5,
+	IconBrandOpenSource,
+	IconBrandSocketIo,
+	IconBrandSupabase,
+	IconBrandUbuntu,
+	IconBrandX
+} from "@tabler/icons-react";
+import {
 	IconBrandCSharp,
+	IconBrandCss3,
 	IconBrandNextjs,
 	IconBrandPrisma,
 	IconBrandPython,
 	IconBrandReact,
+	IconBrandRust,
 	IconBrandTailwind,
 	IconBrandTypescript,
 	IconBrandVercel
@@ -40,16 +53,25 @@ export default async function Page() {
 				</Link>
 			</div>
 			<div>
-				<h2 className="text-lg font-bold">Stuff im good at</h2>
+				<h2 className="text-lg font-bold">
+					Stuff i&apos;ve worked with in the past
+				</h2>
 				<div className="flex h-16 justify-between gap-2 overflow-auto scrollbar-thin scrollbar-thumb-accent-light dark:scrollbar-thumb-accent-dark sm:h-20 [&>*]:h-auto [&>*]:w-auto [&>*]:flex-none">
-					<IconBrandTypescript />
-					<IconBrandVercel />
-					<IconBrandPrisma />
+					<IconBrandRust />
 					<IconBrandNextjs />
-					<IconBrandReact />
-					<IconBrandTailwind />
 					<IconBrandCSharp />
-					<IconBrandPython />
+					<IconBrandCpp />
+					<IconBrandHtml5 />
+					<IconBrandTypescript />
+					<IconBrandCss3 />
+					<IconBrandSupabase />
+					<IconBrandGithub />
+					<IconBrandGit />
+					<IconBrandSocketIo />
+					<IconBrandOpenSource />
+					<IconBrandReact />
+					<IconBrandUbuntu />
+					<IconBrandVercel />
 				</div>
 			</div>
 		</div>

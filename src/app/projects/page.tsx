@@ -1,4 +1,5 @@
 import { slug_translations } from "@app/project/[slug]/page";
+import { IconSize } from "@lib/iconSizes";
 import { getProject } from "@lib/project";
 import { IconBrandGithub } from "@tabler/icons-react";
 import { Metadata } from "next";
@@ -15,22 +16,29 @@ export default async function ProjectPage() {
 					<div
 						key={x.slug}
 						className="relative">
-						<Link
-							href={x.repo}
-							target="_blank"
-							rel="noopener noreferrer"
-							className="theme-text absolute right-0 z-10"
-							aria-label={`${x.title} on Github`}>
-							<IconBrandGithub
-								size={50}
-								className="theme-interactable border-0 border-b-2 border-l-2 p-2"
-							/>
-						</Link>
+						<div className="theme-border theme-background absolute right-0 z-10 flex border-b-2 border-l-2">
+							<Link
+								href={x.repo}
+								target="_blank"
+								rel="noopener noreferrer"
+								className="theme-interactable border-0 p-2"
+								aria-label={`${x.title} on Github`}>
+								<IconBrandGithub size={IconSize.Medium} />
+							</Link>
+						</div>
 						<Link
 							href={x.url}
 							className="theme-interactable flex aspect-square items-center justify-center text-3xl font-bold uppercase"
 							key={x.slug}>
-							{x.title}
+							<span className="flex items-center gap-2">
+								{x.title}
+								{new Date().getTime() - x.timestamp <=
+									7 * 24 * 60 * 60 * 1000 && (
+									<span className="bg-pink-600 px-2 text-sm font-bold lowercase text-primary-dark dark:text-primary-light">
+										new
+									</span>
+								)}
+							</span>
 						</Link>
 					</div>
 				))}
