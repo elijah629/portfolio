@@ -17,7 +17,7 @@
 		"preact": "^8.5.3",
 		"preact-compat": "^3.19.0",
 		"react-random-reveal": "^2.0.0",
-		"yaml": "^2.3.1"
+		"yaml": "^2.3.2"
 	},
 	"devDependencies": {
 		"@types/node": "^20.5.0",
