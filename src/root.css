@@ -7,6 +7,13 @@ body {
 	height: 100%;
 }
 
+@font-face {
+  font-family: "Fira Code";
+  src:
+    local("Fira Code"),
+    url(@/assets/fonts/FiraCode.ttf) format("truetype");
+}
+
 @layer components {
 	.btn {
 		@apply sm:hover:inverted border-2 p-1 sm:transition;
