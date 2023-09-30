@@ -1,0 +1,9 @@
+title: "paper.rs"
+description: "paper.io clone in rust and wasms."
+url: https://paper-rs.vercel.app
+repo: https://github.com/elijah629/paper.rs
+timestamp: 1692225113104
+tags:
+    - game
+    - paper.io
+    - rust

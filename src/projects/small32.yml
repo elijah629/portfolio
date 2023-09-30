@@ -1,0 +1,8 @@
+title: "small32"
+description: "A collection of small x86 utilities in asm."
+url: https://github.com/elijah629/small32
+repo: https://github.com/elijah629/small32
+timestamp: 1692082800000
+tags:
+    - x86
+    - assembly

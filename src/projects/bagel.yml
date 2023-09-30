@@ -1,0 +1,8 @@
+title: "Bagel"
+description: "Connect with anyone!"
+image: /images/bagel.png
+url: https://bagel.vercel.app
+repo: https://github.com/elijah629/bagel
+tags:
+    - chat
+    - social

@@ -1,0 +1,37 @@
+{
+	"name": "portfolio-solid",
+	"scripts": {
+		"dev": "solid-start dev",
+		"build": "solid-start build",
+		"start": "solid-start start",
+		"lint": "prettier . --write"
+	},
+	"type": "module",
+	"devDependencies": {
+		"@types/node": "^20.7.2",
+		"autoprefixer": "^10.4.15",
+		"postcss": "^8.4.28",
+		"prettier": "^3.0.3",
+		"prettier-plugin-organize-imports": "^3.2.3",
+		"prettier-plugin-tailwindcss": "^0.5.4",
+		"solid-start-node": "^0.3.6",
+		"tailwind-scrollbar": "^3.0.5",
+		"tailwindcss": "^3.3.3",
+		"typescript": "^5.2.2",
+		"vite": "^4.4.9",
+		"vite-plugin-pwa": "^0.16.5"
+	},
+	"dependencies": {
+		"@solidjs/meta": "^0.28.6",
+		"@solidjs/router": "^0.8.3",
+		"@tabler/icons": "^2.37.0",
+		"solid-icons": "^1.0.12",
+		"solid-js": "^1.7.12",
+		"solid-start": "^0.3.6",
+		"solid-start-vercel": "^0.3.6",
+		"yaml": "^2.3.2"
+	},
+	"engines": {
+		"node": "18"
+	}
+}

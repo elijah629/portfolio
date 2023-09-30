@@ -1,0 +1,8 @@
+title: "Rubert"
+description: "3x3x3 Rubiks cube scanner and solver"
+image: /images/rubert.png
+url: https://rubert.vercel.app
+repo: https://github.com/elijah629/rubert
+tags:
+    - rubiks
+    - solver

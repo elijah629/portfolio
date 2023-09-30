@@ -1,0 +1,8 @@
+title: "rustutil"
+description: "A utility management program for rust."
+image: /images/rustutil.png
+url: https://github.com/rustutil/
+repo: https://github.com/rustutil/rustutil
+tags:
+    - rust
+    - pkg manager
