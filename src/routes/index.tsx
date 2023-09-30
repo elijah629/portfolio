@@ -22,8 +22,8 @@ import projects from "@/projects";
 export default function Home() {
 	return (
 		<>
-			<p>
-				Notice anything different? I remade my site with SolidJS and
+			<p class="text-xs">
+				<span class="font-bold">Notice anything different?</span> I remade my site with SolidJS and
 				SolidStart! ( its amazing )
 			</p>
 			<p>
