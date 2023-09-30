@@ -34,7 +34,7 @@ export default function Root() {
 				/>
 				<Meta
 					name="color-scheme"
-					content="dark light"
+					content="dark"
 				/>
 				<Meta
 					name="application-name"
@@ -42,7 +42,7 @@ export default function Root() {
 				/>
 				<Meta
 					name="theme-color"
-					content="#000000"
+					content="#1d1e28"
 				/>
 
 				<Link
