@@ -42,7 +42,7 @@ export default function Root() {
 				/>
 				<Meta
 					name="theme-color"
-					content="#1d1e28"
+					content="#16171f"
 				/>
 
 				<Link

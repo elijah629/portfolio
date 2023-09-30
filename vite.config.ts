@@ -17,7 +17,7 @@ export default defineConfig({
 				name: "Elijah629's Portfolio",
 				short_name: "Elijah629",
 				theme_color: "#1dafa1",
-				background_color: "#1d1e28",
+				background_color: "#16171f",
 				display: "standalone",
 				orientation: "portrait",
 				icons: [
