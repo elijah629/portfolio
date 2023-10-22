@@ -8,10 +8,10 @@ body {
 }
 
 @font-face {
-  font-family: "Fira Code";
-  src:
-    local("Fira Code"),
-    url(@/assets/fonts/FiraCode.ttf) format("truetype");
+	font-family: "Fira Code";
+	src:
+		local("Fira Code"),
+		url(@/assets/fonts/FiraCode.ttf) format("truetype");
 }
 
 @layer components {

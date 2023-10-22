@@ -1,8 +1,6 @@
 // @refresh reload
-import { Suspense } from "solid-js";
+import { Suspense, onMount } from "solid-js";
 import {
-	useLocation,
-	A,
 	Body,
 	ErrorBoundary,
 	FileRoutes,
@@ -17,8 +15,13 @@ import {
 import "./root.css";
 import Header from "./components/Header";
 import { Footer } from "./components/Footer";
+import { useRegisterSW } from "virtual:pwa-register/solid";
 
 export default function Root() {
+	onMount(() => {
+		useRegisterSW();
+	});
+
 	return (
 		<Html lang="en">
 			<Head>

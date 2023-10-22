@@ -12,18 +12,6 @@ import small32 from "./small32.yml";
 import typet from "./typet.yml";
 
 export default {
-	//  "bagel",
-	//  "drawr",
-	//  "finally",
-	//  "gridln",
-	//  "nasmc",
-	//  "paper.rs",
-	//  "redditlang",
-	//  "rubert",
-	//  "rustutil",
-	//  "small32",
-	//  "typet"
-
 	"bagel": bagel as Project,
 	"drawr": drawr as Project,
 	"finally": _finally as Project,

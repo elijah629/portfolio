@@ -1,6 +1,6 @@
 import { IconSize } from "@/lib/iconSize";
 import projects from "@/projects";
-import { TbBrandGithub } from "solid-icons/tb";
+import { IconBrandGithub } from "@/lib/icons";
 import { For } from "solid-js";
 import { A, Title } from "solid-start";
 
@@ -19,7 +19,7 @@ export default function ProjectPage() {
 									rel="noopener noreferrer"
 									class="btn border-0 p-2"
 									aria-label={`${x.title} on Github`}>
-									<TbBrandGithub size={IconSize.Medium} />
+									<IconBrandGithub size={IconSize.Medium} />
 								</A>
 							</div>
 							<A

@@ -1,30 +1,26 @@
 import { A } from "@solidjs/router";
 import {
-	TbBrandSolidjs,
-	TbBrandCpp,
-	TbBrandGit,
-	TbBrandGithub,
-	TbBrandHtml5,
-	TbBrandOpenSource,
-	TbBrandSocketIo,
-	TbBrandSupabase,
-	TbBrandUbuntu,
-	TbBrandCSharp,
-	TbBrandCss3,
-	TbBrandNextjs,
-	TbBrandReact,
-	TbBrandRust,
-	TbBrandTypescript,
-	TbBrandVercel
-} from "solid-icons/tb";
+	IconBrandSolidJS,
+	IconBrandGit,
+	IconBrandGithub,
+	IconBrandHtml5,
+	IconBrandSupabase,
+	IconBrandCSharp,
+	IconBrandCss3,
+	IconBrandNextjs,
+	IconBrandReact,
+	IconBrandRust,
+	IconBrandTypescript,
+	IconBrandVercel
+} from "@/lib/icons";
 import projects from "@/projects";
 
 export default function Home() {
 	return (
 		<>
 			<p class="text-xs">
-				<span class="font-bold">Notice anything different?</span> I remade my site with SolidJS and
-				SolidStart! ( its amazing )
+				<span class="font-bold">Notice anything different?</span> I
+				remade my site with SolidJS and SolidStart! ( its amazing )
 			</p>
 			<p>
 				Welcome to my site, its filled with projects I have worked on
@@ -47,22 +43,18 @@ export default function Home() {
 					Stuff I've worked with in the past
 				</h2>
 				<div class="flex h-16 justify-between gap-2 overflow-auto scrollbar-thin scrollbar-thumb-accent sm:h-20 [&>*]:h-auto [&>*]:w-auto">
-					<TbBrandRust />
-					<TbBrandSolidjs />
-					<TbBrandNextjs />
-					<TbBrandCSharp />
-					<TbBrandCpp />
-					<TbBrandHtml5 />
-					<TbBrandTypescript />
-					<TbBrandCss3 />
-					<TbBrandSupabase />
-					<TbBrandGithub />
-					<TbBrandGit />
-					<TbBrandSocketIo />
-					<TbBrandOpenSource />
-					<TbBrandReact />
-					<TbBrandUbuntu />
-					<TbBrandVercel />
+					<IconBrandRust />
+					<IconBrandSolidJS />
+					<IconBrandNextjs />
+					<IconBrandCSharp />
+					<IconBrandHtml5 />
+					<IconBrandTypescript />
+					<IconBrandCss3 />
+					<IconBrandSupabase />
+					<IconBrandGithub />
+					<IconBrandGit />
+					<IconBrandReact />
+					<IconBrandVercel />
 				</div>
 			</div>
 		</>

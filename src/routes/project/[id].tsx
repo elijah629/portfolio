@@ -11,7 +11,6 @@ export default function Page() {
 
 	const [index, setIndex] = createSignal(ids.indexOf(params.id));
 
-	// on:params.id
 	createEffect(() => {
 		setIndex(ids.indexOf(params.id));
 	});

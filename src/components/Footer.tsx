@@ -1,7 +1,8 @@
 import { IconSize } from "@/lib/iconSize";
 import { A } from "@solidjs/router";
-import { TbBrandGithub } from "solid-icons/tb";
+import { IconBrandGithub, IconBrandGit } from "@/lib/icons";
 import { createSignal } from "solid-js";
+import commit_hash from "virtual:COMMIT_HASH";
 
 export function Footer() {
 	const address = "0x92AF1aEEd7D8Da4051D2F80ACb11124e5495F2E3";
@@ -24,17 +25,17 @@ export function Footer() {
 	const [content, setContent] = createSignal(o);
 
 	return (
-		<footer class="grid grid-cols-[1fr,auto,1fr] items-center border-t-2 bg-secondary p-4">
+		<footer class="flex items-center justify-between border-t-2 bg-secondary p-4">
 			<A
 				href="https://github.com/elijah629"
 				target="_blank"
 				rel="noopener noreferrer"
 				class="btn w-fit p-2"
 				aria-label="Github">
-				<TbBrandGithub size={IconSize.Medium} />
+				<IconBrandGithub size={IconSize.Medium} />
 			</A>
 			<button
-				class="btn col-start-2"
+				class="btn"
 				onClick={() => {
 					if (window.isSecureContext) {
 						navigator.clipboard.writeText(address);
@@ -44,6 +45,10 @@ export function Footer() {
 				}}>
 				{content()}
 			</button>
+			<span class="flex items-center gap-1">
+				<IconBrandGit size={24} />
+				{commit_hash.substring(0, 7)}
+			</span>
 		</footer>
 	);
 }

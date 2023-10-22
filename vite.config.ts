@@ -9,6 +9,9 @@ import { VitePWA } from "vite-plugin-pwa";
 export default defineConfig({
 	plugins: [
 		yaml(),
+		commit_hash({
+			repo: "elijah629/portfolio"
+		}),
 		VitePWA({
 			registerType: "autoUpdate",
 			injectRegister: null,
@@ -54,6 +57,35 @@ function yaml(): PluginOption {
 		transform(code, filename) {
 			if (/\.ya?ml/.test(filename)) {
 				return `export default ${JSON.stringify(parse(code))};`;
+			}
+		}
+	};
+}
+
+function commit_hash(options: { repo: string }) {
+	const virtualModuleId = "virtual:COMMIT_HASH";
+
+	return {
+		name: "commit-hash",
+		resolveId(id: string) {
+			if (id === virtualModuleId) {
+				return virtualModuleId;
+			}
+		},
+		async load(id: string) {
+			if (id === virtualModuleId) {
+				// HMR will rate limit you from gh api
+				if (process.env.NODE_ENV !== "production") {
+					return `export default ""`;
+				}
+				// Vercel doesn't upload .git
+				const hash: string = await fetch(
+					`https://api.github.com/repos/${options.repo}/commits/HEAD`
+				)
+					.then(x => x.json())
+					.then(x => x.sha);
+
+				return `export default "${hash}"`;
 			}
 		}
 	};

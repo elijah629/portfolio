@@ -1,17 +1,17 @@
 import { IconSize } from "@/lib/iconSize";
-import { TbArrowLeft, TbArrowRight, TbX } from "solid-icons/tb";
+import { IconArrowLeft, IconArrowRight, IconX } from "@/lib/icons";
 import { Show } from "solid-js";
 import { A } from "solid-start";
 
 function DisabledButton() {
 	return (
 		<span class="flex flex-1 cursor-not-allowed justify-center p-8 text-red-500">
-			<TbX size={IconSize.ExtraLarge} />
+			<IconX size={IconSize.ExtraLarge} />
 		</span>
 	);
 }
 
-export default function ProjectButtons(props: {
+export default function ProjecIconuttons(props: {
 	next: string | undefined;
 	previous: string | undefined;
 }) {
@@ -24,7 +24,7 @@ export default function ProjectButtons(props: {
 					href={`/project/${props.previous}`}
 					aria-label="Previous project"
 					class="btn flex flex-1 justify-center border-0 p-8">
-					<TbArrowLeft size={IconSize.ExtraLarge} />
+					<IconArrowLeft size={IconSize.ExtraLarge} />
 				</A>
 			</Show>
 			<Show
@@ -34,7 +34,7 @@ export default function ProjectButtons(props: {
 					href={`/project/${props.next}`}
 					aria-label="Next project"
 					class="btn flex flex-1 justify-center border-0 p-8">
-					<TbArrowRight size={IconSize.ExtraLarge} />
+					<IconArrowRight size={IconSize.ExtraLarge} />
 				</A>
 			</Show>
 		</div>

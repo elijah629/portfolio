@@ -5,5 +5,4 @@ export interface Project {
 	image?: string;
 	tags: string[];
 	repo: string;
-	timestamp: number;
 }

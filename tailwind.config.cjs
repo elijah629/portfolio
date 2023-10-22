@@ -11,10 +11,10 @@ module.exports = {
 				primary: "#1d1e28",
 				secondary: "#16171f",
 				accent: "#1dafa1"
-			},
+			}
 		},
 		fontFamily: {
-			sans: [ "Fira Code", "monospace" ]
+			sans: ["Fira Code", "monospace"]
 		}
 	},
 	plugins: [require("tailwind-scrollbar")]

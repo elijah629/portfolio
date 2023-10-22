@@ -1,5 +1,5 @@
 import { IconSize } from "@/lib/iconSize";
-import { TbArrowRight, TbBrandGithub } from "solid-icons/tb";
+import { IconArrowRight, IconBrandGithub } from "@/lib/icons";
 import { For, Show } from "solid-js";
 import { A } from "solid-start";
 import { Project as IProject } from "@/lib/project";
@@ -15,7 +15,7 @@ export default function Project(props: { project: IProject }) {
 						rel="noopener noreferrer"
 						class="btn border-0 p-2"
 						aria-label={`${props.project.title} on Github`}>
-						<TbBrandGithub size={IconSize.Medium} />
+						<IconBrandGithub size={IconSize.Medium} />
 					</A>
 				</div>
 				<Show
@@ -26,7 +26,7 @@ export default function Project(props: { project: IProject }) {
 							class="group flex h-full items-center justify-center">
 							<span class="flex items-center text-3xl transition group-hover:translate-x-10">
 								VISIT
-								<TbArrowRight
+								<IconArrowRight
 									class="inline transition group-hover:translate-x-5"
 									size={IconSize.ExtraLarge}
 								/>
