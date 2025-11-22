@@ -24,14 +24,16 @@ function formatDate(d: Date) {
 export function ProjectCard({ project }: { project: Project }) {
   return (
     <Card className="flex-col md:flex-row items-center p-6">
-      {project.image && (
-        <Image
-          src={project.image}
-          width={project.image.width}
-          alt={project.title}
-          className="rounded-xl max-w-sm object-cover"
-        />
-      )}
+      <div className="shrink-0 w-full md:w-max overflow-hidden rounded-xl">
+        {project.image && (
+          <Image
+            src={project.image}
+            width={project.image.width}
+            alt={project.title}
+            className="rounded-xl mx-auto w-sm object-scale-down"
+          />
+        )}
+      </div>
       <div className="flex flex-col gap-4">
         <CardHeader>
           <CardTitle className="text-lg md:text-xl">

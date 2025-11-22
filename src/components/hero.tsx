@@ -6,10 +6,10 @@ export function Hero() {
     <section className="w-full min-h-screen flex items-center justify-center">
       <div className="flex flex-col gap-3 max-w-[80vw]">
         <h3 className="font-mono">yo wsp, I'm</h3>
-        <h1 className="text-8xl font-black">
+        <h1 className="text-5xl md:text-8xl font-black">
           Eli Ozcan. <span className="font-emoji">👋</span>
         </h1>
-        <h1 className="text-7xl text-muted-foreground">
+        <h1 className="text-4xl md:text-7xl text-muted-foreground">
           I build solutions to <i>most</i> problems.
         </h1>
         <p className="leading-7 not-first:mt-6 text-xl">
