@@ -10,13 +10,15 @@ import { ProjectCard } from "./project-card";
 
 export function ProjectCarousel({ projects }: { projects: Project[] }) {
   return (
-    <Carousel className="w-full">
+    <Carousel
+      opts={{
+        loop: true,
+      }}
+    >
       <CarouselContent>
         {projects.map((project) => (
-          <CarouselItem key={project.slug}>
-            <div className="p-1">
-              <ProjectCard project={project} />
-            </div>
+          <CarouselItem className="@container" key={project.slug}>
+            <ProjectCard project={project} />
           </CarouselItem>
         ))}
       </CarouselContent>

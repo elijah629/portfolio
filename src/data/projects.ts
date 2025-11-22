@@ -3,6 +3,7 @@ import web2050 from "../images/web2050.png";
 import flippy from "../images/flippy.png";
 import ttfu from "../images/ttfu.png";
 import sonai from "../images/sonai.png";
+import facts from "../images/facts.png";
 import pvbc from "../images/pvbc.png";
 
 export interface Project {
@@ -65,6 +66,7 @@ export const projects: Record<"web" | "hardware" | "ml" | "nix", Project[]> = {
       slug: "facts",
       title: "Facts",
       description: "factsmgt custom frontend thingy",
+      image: facts,
       technologies: ["Next.js", "Shadcn", "TailwindCSS"],
       link: {
         github: "https://github.com/elijah629/facts",
@@ -124,8 +126,8 @@ export const projects: Record<"web" | "hardware" | "ml" | "nix", Project[]> = {
     },
     {
       slug: "touca.nvim",
-      title: "Neovim config",
-      description: "use this config, i'm daring you :) ",
+      title: "touca.nvim",
+      description: "use this neovim config, i'm daring you :) ",
       technologies: ["Nix", "Neovim"],
       link: {
         github: "https://github.com/elijah629/touca.nvim",
@@ -144,6 +146,7 @@ export const projects: Record<"web" | "hardware" | "ml" | "nix", Project[]> = {
       technologies: ["Rust", "AI", "ML Detection"],
       link: {
         github: "https://github.com/elijah629/how-much-of-som-is-ai",
+        live: "https://sonai.eli.best",
       },
       tags: ["ai", "ml"],
       date: new Date("July 27 2025"),

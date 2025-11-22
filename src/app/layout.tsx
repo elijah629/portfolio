@@ -20,7 +20,7 @@ const serenityOSEmoji = localFont({
 
 export const metadata: Metadata = {
   title: "Eli Ozcan",
-  description: "web-dev or something",
+  description: "software 'engineering'",
 };
 
 export default function RootLayout({
