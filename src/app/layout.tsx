@@ -10,7 +10,6 @@ const spotifyMix = localFont({
 
 const cascadiaCode = Cascadia_Code({
   variable: "--font-casc-code",
-  adjustFontFallback: false,
   subsets: ["latin"],
 });
 
