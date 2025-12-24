@@ -2,6 +2,8 @@ import { StaticImageData } from "next/image";
 import web2050 from "../images/web2050.png";
 import flippy from "../images/flippy.png";
 import ttfu from "../images/ttfu.png";
+import flavortownCatppucin from "../images/flavortown-catppuccin.png";
+import hackaiFrontend from "../images/hackai-frontend.png";
 import sonai from "../images/sonai.png";
 import facts from "../images/facts.png";
 import pvbc from "../images/pvbc.png";
@@ -23,6 +25,32 @@ export interface Project {
 export const projects: Record<"web" | "hardware" | "ml" | "nix", Project[]> = {
   web: [
     {
+      slug: "flavortown-catppuccin",
+      title: "Flavortown Catppuccin",
+      description: "Catppuccin theme for hackclub/flavortown!",
+      image: flavortownCatppucin,
+      technologies: ["less", "css"],
+      link: {
+        github: "https://github.com/elijah629/flavortown-catppuccin",
+        live: "https://userstyles.world/style/25744/flavortown-catppuccin",
+      },
+      tags: ["userstyle", "hackclub"],
+      date: new Date("December 22 2025"),
+    },
+    {
+      slug: "hackai-frontend",
+      title: "HackAI Frontend",
+      description: "BYOK Chat Frontend for hackclub/ai",
+      image: hackaiFrontend,
+      technologies: ["LLMs", "Hackclub", "Next.JS"],
+      link: {
+        github: "https://github.com/elijah629/hackai-frontend",
+        live: "https://ai.eli.best",
+      },
+      tags: ["ai", "hackclub", "frontend"],
+      date: new Date("November 23 2025"),
+    },
+    {
       slug: "web2050",
       title: "web2050",
       description: "The internet, except everything was vibecoded.",
@@ -30,7 +58,7 @@ export const projects: Record<"web" | "hardware" | "ml" | "nix", Project[]> = {
       technologies: ["Rust", "LLMs", "Hackclub"],
       link: {
         github: "https://github.com/elijah629/web2050",
-        live: "https://ai.dino.icu",
+        // live: "https://ai.dino.icu",
       },
       tags: ["backend", "streaming", "ai"],
       date: new Date("August 25 2025"),
