@@ -5,16 +5,12 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { Project } from "@/data/projects";
+import type { Project } from "@/data/projects";
 import { ProjectCard } from "./project-card";
 
 export function ProjectCarousel({ projects }: { projects: Project[] }) {
   return (
-    <Carousel
-      opts={{
-        loop: true,
-      }}
-    >
+    <Carousel>
       <CarouselContent>
         {projects.map((project) => (
           <CarouselItem className="@container" key={project.slug}>

@@ -1,18 +1,18 @@
+import { SiGithub } from "@icons-pack/react-simple-icons";
+import { Calendar, ExternalLink, Tag as TagIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
-  CardHeader,
-  CardTitle,
   CardDescription,
   CardFooter,
+  CardHeader,
+  CardTitle,
 } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { ExternalLink, Calendar, Tag as TagIcon } from "lucide-react";
-import { Project } from "@/data/projects";
-import { SiGithub } from "@icons-pack/react-simple-icons";
+import type { Project } from "@/data/projects";
 
 function formatDate(d: Date) {
   return new Intl.DateTimeFormat("en-US", {

@@ -1,12 +1,12 @@
-import { StaticImageData } from "next/image";
-import web2050 from "../images/web2050.png";
-import flippy from "../images/flippy.png";
-import ttfu from "../images/ttfu.png";
-import flavortownCatppucin from "../images/flavortown-catppuccin.png";
-import hackaiFrontend from "../images/hackai-frontend.png";
-import sonai from "../images/sonai.png";
+import type { StaticImageData } from "next/image";
 import facts from "../images/facts.png";
+import flavortownCatppucin from "../images/flavortown-catppuccin.png";
+import flippy from "../images/flippy.png";
+import hackaiFrontend from "../images/hackai-frontend.png";
 import pvbc from "../images/pvbc.png";
+import sonai from "../images/sonai.png";
+import ttfu from "../images/ttfu.png";
+import web2050 from "../images/web2050.png";
 
 export interface Project {
   slug: string;
@@ -22,7 +22,10 @@ export interface Project {
   date: Date;
 }
 
-export const projects: Record<"web" | "hardware" | "ml" | "nix", Project[]> = {
+export const projects: Record<
+  "web" | "hardware" | "ml" | "systems" | "nix",
+  Project[]
+> = {
   web: [
     {
       slug: "flavortown-catppuccin",
@@ -84,8 +87,8 @@ export const projects: Record<"web" | "hardware" | "ml" | "nix", Project[]> = {
       image: pvbc,
       technologies: ["Rust", "Server", "shields.io"],
       link: {
-        github: "https://github.com/elijah629/tic-tac-fuck-you",
-        live: "https://ttfu.eli.best",
+        github: "https://github.com/elijah629/pvbc",
+        live: "https://pvbc.eli.best",
       },
       tags: ["backend", "utilities"],
       date: new Date("August 7 2025"),
@@ -138,6 +141,20 @@ export const projects: Record<"web" | "hardware" | "ml" | "nix", Project[]> = {
       },
       tags: ["ai", "cool-hw"],
       date: new Date("September 25 2025"),
+    },
+  ],
+  systems: [
+    {
+      slug: "redditlang",
+      title: "Redditlang",
+      description:
+        "Meme programming language / LLVM compiler in Rust. I abandoned it for a year because loops hurt, then came back and made them work.",
+      technologies: ["Rust", "LLVM", "Compiler"],
+      link: {
+        github: "https://github.com/elijah629/redditlang",
+      },
+      tags: ["compiler", "language", "rust"],
+      date: new Date("May 2 2026"),
     },
   ],
   nix: [
