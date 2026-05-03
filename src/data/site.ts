@@ -1,9 +1,9 @@
 export const site = {
-  name: "Eli Ozcan",
-  title: "Eli Ozcan",
+  name: "Eli Özcan",
+  title: "Eli Özcan",
   url: "https://eli.best",
   description:
-    "Portfolio for Eli Ozcan: software engineering, mechatronics, robotics, CAD, aviation, AI experiments, and projects that started from wanting to know why things work.",
+    "Portfolio for Eli Özcan: software engineering, mechatronics, robotics, CAD, aviation, AI experiments, and projects that started from wanting to know why things work.",
   github: "https://github.com/elijah629",
   instagram: "https://www.instagram.com/eli.ozcan/",
   hackClub: "https://hackclub.com/",
@@ -14,8 +14,7 @@ export const site = {
     "https://news.kern.org/2025/03/hundreds-of-future-scientists-dazzle-at-kern-county-regional-science-fair/",
   redditlang: "https://github.com/elijah629/redditlang",
   keywords: [
-    "Eli Ozcan",
-    "Elijah Ozcan",
+    "Eli Özcan",
     "student software engineer",
     "mechatronics",
     "robotics",

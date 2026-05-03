@@ -13,7 +13,7 @@ export function Hero() {
           yo wsp, I'm
         </p>
         <h1 className="text-5xl md:text-8xl font-black leading-none">
-          Eli Ozcan. <span className="font-emoji">👋</span>
+          Eli Özcan. <span className="font-emoji">👋</span>
         </h1>
         <h2 className="text-4xl md:text-7xl text-muted-foreground leading-tight">
           I write code, <CrackedText>break</CrackedText> it, and call that{" "}
