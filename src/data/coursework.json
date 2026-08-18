@@ -1,0 +1,49 @@
+{
+  "note": "Add future class builds to the projects array for the matching course. The coursework section renders them automatically.",
+  "courses": [
+    {
+      "id": "poe",
+      "code": "POE",
+      "name": "Principles of Engineering",
+      "status": "Planned coursework",
+      "focus": [
+        "mechanical systems",
+        "engineering notebooks",
+        "design calculations",
+        "prototyping",
+        "VEX V5"
+      ],
+      "projects": []
+    },
+    {
+      "id": "ied",
+      "code": "IED",
+      "name": "Introduction to Engineering Design",
+      "status": "Planned coursework",
+      "focus": [
+        "Autodesk Inventor",
+        "3D modeling",
+        "technical drawings",
+        "design process",
+        "3D printing"
+      ],
+      "projects": []
+    }
+  ],
+  "projectTemplate": {
+    "slug": "project-slug",
+    "title": "Project title",
+    "date": "YYYY-MM-DD",
+    "problem": "What needed to be solved?",
+    "work": "What I designed, calculated, built, programmed, or tested.",
+    "result": "Measured result and what changed after testing.",
+    "tools": ["Tool or process"],
+    "links": {
+      "devlog": "",
+      "repository": "",
+      "cad": "",
+      "demo": ""
+    },
+    "image": ""
+  }
+}

@@ -1,8 +1,14 @@
+import { FeaturedBuilds } from "@/components/featured-builds";
 import { Footer } from "@/components/footer";
+import { GithubStats } from "@/components/github-stats";
 import { Banner } from "@/components/hackclub-banner";
 import { Hero } from "@/components/hero";
+import { PersonalStatement } from "@/components/personal-statement";
+import { PrintResumeButton } from "@/components/print-resume-button";
+import { PrintableResume } from "@/components/printable-resume";
 import { ProofPoints } from "@/components/proof-points";
 import { RecruiterSummary } from "@/components/recruiter-summary";
+import { Robotics } from "@/components/robotics";
 import { Technologies } from "@/components/technologies";
 import { Work } from "@/components/work";
 import { projects } from "@/data/projects";
@@ -18,7 +24,7 @@ const jsonLd = {
   knowsAbout: site.keywords,
   hasOccupation: {
     "@type": "Occupation",
-    name: "Software Engineer",
+    name: "Student Robotics and Software Engineer",
     skills: [
       "Rust",
       "Next.js",
@@ -34,6 +40,24 @@ const jsonLd = {
       "NixOS",
     ],
   },
+  affiliation: {
+    "@type": "EducationalOrganization",
+    name: "Garces Memorial High School",
+    url: site.garces,
+  },
+  memberOf: [
+    {
+      "@type": "Organization",
+      name: "Garces Rambotics V5RC 28001A",
+      url: site.robotEvents,
+    },
+    {
+      "@type": "Organization",
+      name: "Civil Air Patrol",
+      url: site.civilAirPatrol,
+    },
+    { "@type": "Organization", name: "Hack Club", url: site.hackClub },
+  ],
   subjectOf: Object.values(projects)
     .flat()
     .map((project) => ({
@@ -50,15 +74,23 @@ export default function Home() {
   return (
     <>
       <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
-      <Banner year={2026} />
-      <main>
-        <Hero />
-        <RecruiterSummary />
-        <ProofPoints />
-        <Work />
-        <Technologies />
-      </main>
-      <Footer />
+      <div className="screen-portfolio">
+        <Banner year={2026} />
+        <PrintResumeButton />
+        <main>
+          <Hero />
+          <RecruiterSummary />
+          <PersonalStatement />
+          <FeaturedBuilds />
+          <Robotics />
+          <GithubStats />
+          <ProofPoints />
+          <Work />
+          <Technologies />
+        </main>
+        <Footer />
+      </div>
+      <PrintableResume />
     </>
   );
 }

@@ -24,14 +24,14 @@ function formatDate(d: Date) {
 
 export function ProjectCard({ project }: { project: Project }) {
   return (
-    <Card className="flex-col @2xl:flex-row justify-center items-center h-full">
+    <Card className="h-full items-center justify-center overflow-hidden @2xl:flex-row">
       {project.image && (
-        <div className="shrink-0 w-full px-6 @2xl:pr-0 @sm:w-max overflow-hidden rounded-xl">
+        <div className="w-full shrink-0 overflow-hidden px-6 @sm:w-max @2xl:pr-0">
           <Image
             src={project.image}
             width={project.image.width}
-            alt={project.title}
-            className="rounded-xl mx-auto border w-sm object-scale-down"
+            alt={project.imageAlt ?? `${project.title} project image`}
+            className="mx-auto aspect-video w-sm rounded-xl border bg-secondary/30 object-contain"
           />
         </div>
       )}
@@ -50,7 +50,7 @@ export function ProjectCard({ project }: { project: Project }) {
                 rel="noopener noreferrer"
               >
                 {project.title}
-                <ExternalLink className="w-4 h-4 opacity-80" />
+                <ExternalLink className="size-4 opacity-80" />
               </Link>
             </Button>
           </CardTitle>
@@ -102,7 +102,7 @@ export function ProjectCard({ project }: { project: Project }) {
                 className="inline-flex items-center gap-2 text-sm font-medium"
               >
                 Live Demo
-                <ExternalLink className="w-4 h-4 opacity-80" />
+                <ExternalLink className="size-4 opacity-80" />
               </Link>
             </Button>
           )}

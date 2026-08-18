@@ -1,30 +1,32 @@
-import { Cpu, GraduationCap, Hammer, Rocket } from "lucide-react";
+import { Bot, Boxes, Code2, Printer } from "lucide-react";
+import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
+import { site } from "@/data/site";
 
 const strengths = [
   {
-    title: "I tinker first",
+    title: "Robotics lead",
     description:
-      "Cameras, controllers, remotes, laptops, codebases, VEX robots. If I want to know why it works, I usually have to risk breaking it.",
-    icon: Rocket,
+      "I program and design VEX V5 robots, review technical build decisions, and help teammates turn mechanisms into working assemblies.",
+    icon: Bot,
   },
   {
-    title: "Half mechanic, half electrician",
+    title: "CAD and fabrication",
     description:
-      "Mechatronics fits because machines and electronics both feel like parts of the same thing. Losing either one would feel like leaving half of me behind.",
-    icon: Cpu,
+      "About two years using Autodesk Inventor plus Fusion 360. I design brackets and assemblies, then iterate from measured fit and load problems.",
+    icon: Boxes,
   },
   {
-    title: "I learn better when I teach",
+    title: "3D printing officer",
     description:
-      "I help people a lot, sometimes too much, but it feels wrong not to. Explaining something makes me understand it for real.",
-    icon: Hammer,
+      "I manage 3D printing at Garces and use Bambu Studio and OrcaSlicer for slicing, print setup, troubleshooting, and repeatable fabrication.",
+    icon: Printer,
   },
   {
-    title: "I use AI on purpose",
+    title: "Software systems",
     description:
-      "AI agents are a tool to learn with, not a substitute for talent. It takes real taste and skill to command one well anyways.",
-    icon: GraduationCap,
+      "I work across Rust, C/C++, TypeScript, Next.js, embedded devices, ML experiments, Linux, and NixOS. Public repos show the implementation.",
+    icon: Code2,
   },
 ];
 
@@ -38,7 +40,6 @@ const focusAreas = [
   "AI/ML",
   "Robotics",
   "Aviation",
-  "Golf",
   "Hardware",
   "NixOS",
   "C/C++",
@@ -51,16 +52,23 @@ export function RecruiterSummary() {
       <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[0.8fr_1.2fr]">
         <div className="space-y-4">
           <p className="font-mono text-sm uppercase tracking-normal text-primary">
-            How I think
+            Current engineering roles
           </p>
           <h2 className="text-3xl font-bold md:text-5xl">
-            I keep track of the moments that change how I think.
+            Work I am responsible for now.
           </h2>
           <p className="leading-7 text-muted-foreground">
-            Software engineering has been my thing since I was around seven, but
-            it never stayed only software. It turned into robotics, aviation,
-            CAD, agricultural mechanics, PLTW, golf, and a lot of taking things
-            apart just to understand the order inside them.
+            I am a student at{" "}
+            <Link
+              className="text-primary hover:underline"
+              href={site.garces}
+              target="_blank"
+            >
+              Garces Memorial High School
+            </Link>
+            , incoming captain of V5RC 28001A for the 2026–2027 Override season,
+            and Garces 3D printing officer. I also serve in Civil Air Patrol as
+            a C/Amn.
           </p>
           <div className="flex flex-wrap gap-2 pt-2">
             {focusAreas.map((area) => (

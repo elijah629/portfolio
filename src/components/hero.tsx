@@ -10,28 +10,31 @@ export function Hero() {
     <section className="w-full min-h-screen flex items-center justify-center px-6 py-24">
       <div className="flex flex-col gap-5 max-w-5xl">
         <p className="font-mono text-sm uppercase tracking-normal text-primary">
-          yo wsp, I'm
+          yo wsp, i'm{" "}
         </p>
         <h1 className="text-5xl md:text-8xl font-black leading-none">
           Eli Özcan. <span className="font-emoji">👋</span>
         </h1>
         <h2 className="text-4xl md:text-7xl text-muted-foreground leading-tight">
           I write code, <CrackedText>break</CrackedText> it, and call that{" "}
-          <i>engineering</i>.
+          <i>engineering</i>.{" "}
         </h2>
         <p className="max-w-3xl leading-8 text-xl text-muted-foreground">
           I'm a teen software engineer passionate about hacking the world around
           us. I'm currently focused on{" "}
-          <Link className="text-primary hover:underline" href={site.hackClub}>
+          <Link
+            className="text-primary hover:underline"
+            href="https://hackclub.com"
+          >
             Hack Club
-          </Link>{" "}
+          </Link>
           , programming for my school's robotics team, and experimenting with
-          side projects.
+          side projects.{" "}
         </p>
         <div className="flex md:flex-row flex-col gap-3 pt-2">
           <Button className="md:w-max w-full text-lg" size="lg" asChild>
             <Link href="#work">
-              See selected work
+              See engineering work
               <ArrowDown />
             </Link>
           </Button>

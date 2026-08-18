@@ -1,0 +1,139 @@
+{
+  "identity": {
+    "name": "Eli Özcan",
+    "headline": "Robotics, Mechatronics & Software Engineering",
+    "location": "Bakersfield, California",
+    "links": [
+      { "label": "eli.best", "href": "https://eli.best" },
+      {
+        "label": "github.com/elijah629",
+        "href": "https://github.com/elijah629"
+      },
+      {
+        "label": "Stardance build logs",
+        "href": "https://stardance.hackclub.com/@eli_ozcan"
+      },
+      {
+        "label": "V5RC 28001A",
+        "href": "https://www.robotevents.com/teams/V5RC/28001A"
+      }
+    ]
+  },
+  "summary": "Student engineer working across VEX V5 robotics, CAD, 3D printing, embedded systems, Rust, TypeScript, and machine learning. I design and program robots, document iteration in public build logs, and take projects from measurements and calculations through fabrication and testing.",
+  "skills": [
+    {
+      "category": "Robotics & hardware",
+      "items": [
+        "VEX V5",
+        "vexide",
+        "controls",
+        "mechanism design",
+        "prototyping",
+        "embedded systems"
+      ]
+    },
+    {
+      "category": "CAD & fabrication",
+      "items": [
+        "Autodesk Inventor",
+        "Fusion 360",
+        "3D modeling",
+        "Bambu Studio",
+        "OrcaSlicer",
+        "3D printing"
+      ]
+    },
+    {
+      "category": "Software",
+      "items": [
+        "Rust",
+        "C/C++",
+        "TypeScript",
+        "Next.js",
+        "React",
+        "Python",
+        "NixOS",
+        "Git"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "role": "Captain",
+      "organization": "Garces Rambotics · V5RC 28001A",
+      "period": "2026–2027 Override season",
+      "href": "https://github.com/gmhs-robotics",
+      "bullets": [
+        "Lead technical direction, robot software, design review, build coordination, and engineering documentation.",
+        "Help newer members move from assisted construction to independent design and debugging."
+      ]
+    },
+    {
+      "role": "Programmer & Robot Designer",
+      "organization": "Garces Rambotics · V5RC 28001A",
+      "period": "2025–2026",
+      "href": "https://www.robotevents.com/teams/V5RC/28001A",
+      "bullets": [
+        "Programmed and designed the competition robot; coached teammates through technical mechanisms and construction.",
+        "Built season software in Rust with vexide and maintained team code through the GMHS Robotics organization."
+      ]
+    },
+    {
+      "role": "3D Printing Officer",
+      "organization": "Garces Memorial High School",
+      "period": "Current",
+      "href": "https://garces.org/v1/SubjectContent.aspx?SubjectId=9",
+      "bullets": [
+        "Manage slicing, print setup, troubleshooting, and repeatable part production for engineering work.",
+        "Use Autodesk Inventor, Fusion 360, Bambu Studio, and OrcaSlicer across design and fabrication."
+      ]
+    },
+    {
+      "role": "Cadet Airman (C/Amn)",
+      "organization": "Civil Air Patrol",
+      "period": "Current",
+      "href": "https://www.gocivilairpatrol.com/programs/cadets",
+      "bullets": [
+        "Develop aviation knowledge, service, discipline, and leadership through the cadet program."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "The Chair",
+      "label": "Stardance Super Star project",
+      "href": "https://stardance.hackclub.com/projects/4170",
+      "details": "Motorized VEX V5 chair with an eight-motor differential drivetrain, custom CAD/3D-printed mounts, encoder-based steering feedback, telemetry planning, and safety controls. Recorded gearing errors, interference, wobble, rebuilt supports, and working revisions across 9 public devlogs and 23 logged hours."
+    },
+    {
+      "name": "vexID",
+      "label": "ML + iOS + VEX inventory",
+      "href": "https://stardance.hackclub.com/projects/4161",
+      "details": "ML-assisted VEX V5 parts identification system. Expanded training data, added grouped inventory tags, improved tracking, fixed missing 3D mesh triangles, and moved AprilTag raycasts from an AR plane to the captured iOS mesh."
+    },
+    {
+      "name": "sonai",
+      "label": "Rust/WASM text classifier",
+      "href": "https://github.com/elijah629/sonai",
+      "details": "Built a compact feature-based AI text detector in Rust, made training reproducible with seeded randomness, automated data download and model rebuilds, compiled inference to WASM, and published the crate."
+    },
+    {
+      "name": "Flavortown contributions",
+      "label": "Hack Club open source",
+      "href": "https://github.com/hackclub/flavortown/pulls?q=is%3Apr+author%3Aelijah629",
+      "details": "Four merged pull requests covering devlog API routes and views, pagination fixes, API rate limits, and vector icon work; also built and maintains a Catppuccin userstyle."
+    }
+  ],
+  "achievements": [
+    "1st Place, Cognitive Science — California Science & Engineering Fair, Junior Division (Unraveling AI).",
+    "1st Place, Cognitive Science — Kern County Regional Science Fair; advanced through state competition.",
+    "Hack Club Summer of Making — 8 shipped projects, 107 public devlogs, 490h 31m logged.",
+    "Stack Overflow — 11 answers, 6 questions, and 104k people reached."
+  ],
+  "education": {
+    "school": "Garces Memorial High School",
+    "period": "Class of 2029",
+    "location": "Bakersfield, California",
+    "focus": "Engineering, robotics, CAD, fabrication, computer science, and technical documentation."
+  }
+}

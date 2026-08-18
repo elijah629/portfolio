@@ -1,10 +1,18 @@
 import type { StaticImageData } from "next/image";
+import esp32Gpt from "../images/esp32-gpt-preview.png";
 import facts from "../images/facts.png";
 import flavortownCatppucin from "../images/flavortown-catppuccin.png";
 import flippy from "../images/flippy.png";
 import hackaiFrontend from "../images/hackai-frontend.png";
+import jamrf from "../images/jamrf-preview.png";
+import mogged from "../images/mogged.webp";
+import musee from "../images/musee.png";
+import nixos from "../images/nixos.png";
 import pvbc from "../images/pvbc.png";
+import redditlang from "../images/redditlang.png";
 import sonai from "../images/sonai.png";
+import theChair from "../images/the-chair.png";
+import toucaNvim from "../images/touca-nvim.png";
 import ttfu from "../images/ttfu.png";
 import web2050 from "../images/web2050.png";
 
@@ -13,6 +21,7 @@ export interface Project {
   title: string;
   description: string;
   image?: StaticImageData;
+  imageAlt?: string;
   technologies: string[];
   link: {
     github: string;
@@ -27,6 +36,21 @@ export const projects: Record<
   Project[]
 > = {
   web: [
+    {
+      slug: "mogged",
+      title: "mogged",
+      description:
+        "A facial-rating experiment built by tracing and reworking an existing Omoggle modification. Stardance records 10 hours across two devlogs.",
+      image: mogged,
+      imageAlt: "Mogged face-analysis interface from Eli's Stardance devlog",
+      technologies: ["TypeScript", "Next.js", "Computer vision"],
+      link: {
+        github: "https://github.com/elijah629/mogged",
+        live: "https://stardance.hackclub.com/projects/22090",
+      },
+      tags: ["reverse-engineering", "stardance"],
+      date: new Date("July 3 2026"),
+    },
     {
       slug: "flavortown-catppuccin",
       title: "Flavortown Catppuccin",
@@ -109,6 +133,20 @@ export const projects: Record<
   ],
   hardware: [
     {
+      slug: "the-chair",
+      title: "The Chair",
+      description:
+        "Motorized VEX V5 chair: eight-motor differential drive, custom CAD mounts, encoder-based steering feedback, telemetry plans, and safety controls. Nine public devlogs; 23 hours logged.",
+      image: theChair,
+      technologies: ["VEX V5", "CAD", "3D printing", "Controls"],
+      link: {
+        github: "https://github.com/gmhs-robotics/the-chair",
+        live: "https://stardance.hackclub.com/projects/4170",
+      },
+      tags: ["mechatronics", "stardance", "super-star"],
+      date: new Date("June 2 2026"),
+    },
+    {
       slug: "flippy",
       title: "Flippy",
       description: "Flipper Zero firmware and remote archive management",
@@ -124,6 +162,8 @@ export const projects: Record<
       slug: "jamrf",
       title: "jamRF",
       description: "Compact Sub-GHz Jammer for Flipper Zero ",
+      image: jamrf,
+      imageAlt: "GitHub repository preview for the jamRF hardware project",
       technologies: ["C", "Sub-GHz"],
       link: {
         github: "https://github.com/elijah629/jamrf",
@@ -135,6 +175,8 @@ export const projects: Record<
       slug: "esp32-gpt",
       title: "ESP32-GPT",
       description: "AI on a TI-84 CE Plus calculator",
+      image: esp32Gpt,
+      imageAlt: "GitHub repository preview for ESP32-GPT",
       technologies: ["esp32", "C++"],
       link: {
         github: "https://github.com/elijah629/esp32-gpt",
@@ -145,10 +187,27 @@ export const projects: Record<
   ],
   systems: [
     {
+      slug: "musee",
+      title: "musee",
+      description:
+        "Rust CLI for home music-server management and cleanup; tracked as a Stardance project.",
+      image: musee,
+      imageAlt: "GitHub repository preview for the musee music CLI",
+      technologies: ["Rust", "CLI", "Music server"],
+      link: {
+        github: "https://github.com/elijah629/musee",
+        live: "https://stardance.hackclub.com/projects/22089",
+      },
+      tags: ["systems", "stardance"],
+      date: new Date("April 22 2026"),
+    },
+    {
       slug: "redditlang",
       title: "Redditlang",
       description:
         "Meme programming language / LLVM compiler in Rust. I abandoned it for a year because loops hurt, then came back and made them work.",
+      image: redditlang,
+      imageAlt: "Redditlang programming language logo",
       technologies: ["Rust", "LLVM", "Compiler"],
       link: {
         github: "https://github.com/elijah629/redditlang",
@@ -162,6 +221,8 @@ export const projects: Record<
       slug: "nix-config",
       title: "NixOS Configuration",
       description: "my nix config. hype(r)?",
+      image: nixos,
+      imageAlt: "Official NixOS snowflake logo",
       technologies: ["Nix"],
       link: {
         github: "https://github.com/elijah629/nix-config",
@@ -173,6 +234,8 @@ export const projects: Record<
       slug: "touca.nvim",
       title: "touca.nvim",
       description: "use this neovim config, i'm daring you :) ",
+      image: toucaNvim,
+      imageAlt: "Pixel-art toucan displayed by touca.nvim",
       technologies: ["Nix", "Neovim"],
       link: {
         github: "https://github.com/elijah629/touca.nvim",

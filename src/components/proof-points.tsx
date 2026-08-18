@@ -12,6 +12,20 @@ const achievements = [
     icon: Trophy,
   },
   {
+    title: "Stardance engineering logs",
+    detail:
+      "Four public projects and 14 devlogs. The Chair alone records 23 hours across CAD, fabrication, controls, gearing, safety, and drivetrain revisions.",
+    href: site.stardance,
+    icon: SiHackclub,
+  },
+  {
+    title: "Stack Overflow archive",
+    detail:
+      "11 answers, 6 questions, and 104k people reached. This is older work, but it documents years of debugging in public.",
+    href: site.stackOverflow,
+    icon: ExternalLink,
+  },
+  {
     title: "Kern County Regional Science Fair",
     detail:
       "1st place in Cognitive Science before state, then advanced from the California fair to nationals.",
@@ -21,8 +35,15 @@ const achievements = [
   {
     title: "Hack Club Summer of Making",
     detail:
-      "Public build log with 8 projects, 100+ devlogs, 8 ships, hundreds of hours of coding time, and a Summer of Making win.",
+      "8 shipped projects, 107 devlogs, and 490h 31m logged. The record covers model training, reproducible builds, streaming parsers, performance work, and production debugging.",
     href: site.summerOfMaking,
+    icon: SiHackclub,
+  },
+  {
+    title: "Hack Club Flavortown contributor",
+    detail:
+      "Four merged pull requests: devlog API routing and views, pagination fixes, API rate-limit work, and a vector project icon. I also maintain a Catppuccin userstyle.",
+    href: site.flavortownContributions,
     icon: SiHackclub,
   },
 ];
@@ -32,18 +53,7 @@ export function ProofPoints() {
     <section className="w-full px-6 py-16">
       <div className="mx-auto max-w-6xl">
         <div className="mb-8 max-w-3xl">
-          <p className="font-mono text-sm uppercase tracking-normal text-primary">
-            Public proof points
-          </p>
-          <h2 className="mt-3 text-3xl font-bold md:text-5xl">
-            A few receipts, because documentation matters.
-          </h2>
-          <p className="mt-4 leading-7 text-muted-foreground">
-            I am trying to get better at tracking everything instead of hoping I
-            remember it later. These are the public ones: science fair results,
-            Hack Club shipping, and old Q&A traces from when I was figuring
-            things out in public.
-          </p>
+          <h2 className="text-3xl font-bold md:text-5xl">Results.</h2>
         </div>
         <div className="grid gap-4 md:grid-cols-2">
           {achievements.map(({ title, detail, href, icon: Icon }) => (

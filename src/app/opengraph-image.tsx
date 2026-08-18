@@ -25,10 +25,10 @@ export default function Image() {
     >
       <div style={{ display: "flex", gap: "18px", fontSize: 28 }}>
         <span>Rust</span>
-        <span>AI/ML</span>
-        <span>Hardware</span>
-        <span>Robotics</span>
-        <span>Next.js</span>
+        <span>VEX V5</span>
+        <span>Mechatronics</span>
+        <span>CAD</span>
+        <span>3D Printing</span>
       </div>
       <div style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
         <div style={{ color: "#8caaee", fontSize: 34 }}>{site.url}</div>
@@ -36,8 +36,8 @@ export default function Image() {
           {site.name}
         </div>
         <div style={{ maxWidth: 900, color: "#c9d1f5", fontSize: 38 }}>
-          Software, mechatronics, robotics, CAD, aviation, and projects that
-          start by asking why something works.
+          Robotics captain, software engineer, CAD builder, and 3D printing
+          officer.
         </div>
       </div>
     </div>,
