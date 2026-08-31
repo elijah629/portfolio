@@ -1,6 +1,6 @@
 export const site = {
   name: "Eli Özcan",
-  title: "Eli Özcan — Robotics, Mechatronics & Software Engineering",
+  title: "Eli Özcan",
   url: "https://eli.best",
   description:
     "Engineering portfolio of Eli Özcan, Garces Memorial Class of 2029: VEX V5 robotics, mechatronics, CAD, 3D printing, embedded systems, Rust, and software projects documented through public build logs.",
@@ -16,7 +16,8 @@ export const site = {
   flavortown: "https://flavortown.hackclub.com/",
   flavortownContributions:
     "https://github.com/hackclub/flavortown/pulls?q=is%3Apr+author%3Aelijah629",
-  robotEvents: "https://www.robotevents.com/teams/V5RC/28001A",
+  robotEvents: "https://www.robotevents.com/teams/V5RC/28002A",
+  previousRobotEvents: "https://www.robotevents.com/teams/V5RC/28001A",
   garces: "https://garces.org/",
   garcesEngineering: "https://garces.org/v1/SubjectContent.aspx?SubjectId=9",
   civilAirPatrol: "https://www.gocivilairpatrol.com/programs/cadets",
@@ -37,6 +38,9 @@ export const site = {
     "Eli Ozcan",
     "Garces Memorial High School",
     "Garces Rambotics",
+    "President and Treasurer of Garces Robotics",
+    "Vice President of Garces Chess Club",
+    "V5RC 28002A",
     "V5RC 28001A",
     "VEX Robotics captain",
     "3D printing officer",
@@ -71,6 +75,7 @@ export const site = {
     "https://summer.hackclub.com/users/11144",
     "https://stardance.hackclub.com/@eli_ozcan",
     "https://stackoverflow.com/users/14512356/eli-ozcan",
+    "https://www.robotevents.com/teams/V5RC/28002A",
     "https://www.robotevents.com/teams/V5RC/28001A",
     "https://hackclub.com/",
   ],

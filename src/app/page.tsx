@@ -48,7 +48,7 @@ const jsonLd = {
   memberOf: [
     {
       "@type": "Organization",
-      name: "Garces Rambotics V5RC 28001A",
+      name: "Garces Rambotics V5RC 28002A",
       url: site.robotEvents,
     },
     {

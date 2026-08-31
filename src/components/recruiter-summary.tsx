@@ -7,7 +7,7 @@ const strengths = [
   {
     title: "Robotics lead",
     description:
-      "I program and design VEX V5 robots, review technical build decisions, and help teammates turn mechanisms into working assemblies.",
+      "I have worked with VEX V5 software, robot design, and technical reviews while helping Garces Robotics grow from two teams and about 12 students to four teams and 24 members.",
     icon: Bot,
   },
   {
@@ -66,9 +66,10 @@ export function RecruiterSummary() {
             >
               Garces Memorial High School
             </Link>
-            , incoming captain of V5RC 28001A for the 2026–2027 Override season,
-            and Garces 3D printing officer. I also serve in Civil Air Patrol as
-            a C/Amn.
+            , President and Treasurer of Garces Robotics, Vice President of
+            Garces Chess Club, captain of V5RC 28002A for the 2026–2027 Override
+            season, and Garces 3D printing officer. I also serve in Civil Air
+            Patrol as a C/Amn.
           </p>
           <div className="flex flex-wrap gap-2 pt-2">
             {focusAreas.map((area) => (

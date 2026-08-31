@@ -5,15 +5,22 @@ import { site } from "@/data/site";
 const records = [
   {
     label: "2025–2026",
-    title: "Programmer and robot designer · V5RC 28001A",
-    text: "RobotEvents lists my work as coding and designing the robot and coaching teammates through technical construction. The season repository uses Rust with vexide.",
-    href: site.robotEvents,
+    title: "Captain and programmer · V5RC 28001A",
+    text: "I programmed and helped design the competition robot in Rust with vexide. I also built an autonomous-route recorder and learned, through broken chains, rubber bands, and seized motors, that reliable software still depends on the entire machine.",
+    href: site.previousRobotEvents,
     link: "Team record",
   },
   {
     label: "2026–2027 · Override",
-    title: "Captain · V5RC 28001A",
-    text: "Responsible for technical direction, software, design review, build coordination, documentation, and helping newer members become independent builders.",
+    title: "Captain and programmer · V5RC 28002A",
+    text: "I have worked with the team on technical planning, robot software, design review, build coordination, and documentation. I learn better when I teach, so helping newer members understand why a mechanism works is part of how I improve my own engineering.",
+    href: site.robotEvents,
+    link: "Current team record",
+  },
+  {
+    label: "Garces Robotics",
+    title: "President and treasurer",
+    text: "I helped expand the program from two teams and about 12 students to four teams and 24 members. I now help organize the people, budget, equipment, and technical support needed to give more students room to build and learn.",
     href: site.roboticsGithub,
     link: "Robotics organization",
   },
@@ -34,9 +41,9 @@ export function Robotics() {
           Robotics responsibility
         </p>
         <h2 className="mt-3 max-w-4xl text-4xl font-bold md:text-6xl">
-          I write robot code and own the build around it.
+          Robots are systems. Teams are, too.
         </h2>
-        <div className="mt-10 grid gap-4 lg:grid-cols-3">
+        <div className="mt-10 grid gap-4 md:grid-cols-2">
           {records.map((record) => (
             <article
               className="flex flex-col rounded-lg border bg-background/70 p-6"

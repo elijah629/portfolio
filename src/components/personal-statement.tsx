@@ -66,7 +66,19 @@ export function PersonalStatement() {
               I hope to build something that solves a real problem in my life. I
               would be happy with pretty much anything difficult. The notebook
               beside this is from my work with{" "}
-              <InlineLink href={site.robotEvents}>V5RC 28001A</InlineLink>.
+              <InlineLink href={site.previousRobotEvents}>
+                V5RC 28001A
+              </InlineLink>
+              .
+            </p>
+            <p>
+              Robotics has also shown me that I learn better when I teach. I
+              helped our program grow from two teams and about 12 students to
+              four teams and 24 members, which meant spending more time
+              explaining mechanisms, debugging with newer builders, and making
+              room for other people to try things themselves. Helping can take
+              time away from my own work, but it also forces me to understand
+              why something works instead of only knowing that it works.
             </p>
           </div>
         </article>

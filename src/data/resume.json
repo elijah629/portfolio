@@ -14,12 +14,12 @@
         "href": "https://stardance.hackclub.com/@eli_ozcan"
       },
       {
-        "label": "V5RC 28001A",
-        "href": "https://www.robotevents.com/teams/V5RC/28001A"
+        "label": "V5RC 28002A",
+        "href": "https://www.robotevents.com/teams/V5RC/28002A"
       }
     ]
   },
-  "summary": "Student engineer working across VEX V5 robotics, CAD, 3D printing, embedded systems, Rust, TypeScript, and machine learning. I design and program robots, document iteration in public build logs, and take projects from measurements and calculations through fabrication and testing.",
+  "summary": "Student engineer with experience in competitive robotics, CAD, additive manufacturing, embedded systems, Rust, TypeScript, and machine learning. I have worked with VEX V5 systems from design and programming through fabrication, testing, and technical documentation.",
   "skills": [
     {
       "category": "Robotics & hardware",
@@ -59,23 +59,42 @@
   ],
   "experience": [
     {
-      "role": "Captain",
-      "organization": "Garces Rambotics · V5RC 28001A",
-      "period": "2026–2027 Override season",
-      "href": "https://github.com/gmhs-robotics",
+      "role": "President & Treasurer",
+      "organization": "Garces Robotics",
+      "period": "Current",
+      "href": "https://garces.org/v1/SubjectContent.aspx?SubjectId=9",
       "bullets": [
-        "Lead technical direction, robot software, design review, build coordination, and engineering documentation.",
-        "Help newer members move from assisted construction to independent design and debugging."
+        "Helped expand the robotics program from approximately 12 students across two teams to 24 students across four teams.",
+        "Oversee organizational planning, finances, resources, and technical programs while helping newer members become independent builders."
       ]
     },
     {
-      "role": "Programmer & Robot Designer",
+      "role": "Vice President",
+      "organization": "Garces Chess Club",
+      "period": "Current",
+      "href": "https://garces.org/",
+      "bullets": [
+        "Help lead club operations and build a stronger competitive, analytical chess community at Garces."
+      ]
+    },
+    {
+      "role": "Captain & Programmer",
+      "organization": "Garces Rambotics · V5RC 28002A",
+      "period": "2026–2027 Override season",
+      "href": "https://www.robotevents.com/teams/V5RC/28002A",
+      "bullets": [
+        "Direct technical planning, robot software, design review, build coordination, and engineering documentation.",
+        "Support member development in mechanism design, construction, testing, and debugging."
+      ]
+    },
+    {
+      "role": "Captain & Programmer",
       "organization": "Garces Rambotics · V5RC 28001A",
       "period": "2025–2026",
       "href": "https://www.robotevents.com/teams/V5RC/28001A",
       "bullets": [
-        "Programmed and designed the competition robot; coached teammates through technical mechanisms and construction.",
-        "Built season software in Rust with vexide and maintained team code through the GMHS Robotics organization."
+        "Programmed and designed the competition robot; supported teammates with mechanism development and construction.",
+        "Developed season software in Rust with vexide and maintained team code through the GMHS Robotics organization."
       ]
     },
     {
