@@ -40,7 +40,7 @@ export const projects: Record<
       slug: "mogged",
       title: "mogged",
       description:
-        "A facial-rating experiment built by tracing and reworking an existing Omoggle modification. Stardance records 10 hours across two devlogs.",
+        "A privacy-first, on-device facial analysis experiment built from reverse-engineered Omoggle and Mogwars scoring. A custom multi-view pipeline adds 3D face reconstruction and skin-texture metrics; Stardance records 10 hours across two devlogs.",
       image: mogged,
       imageAlt: "Mogged face-analysis interface from Eli's Stardance devlog",
       technologies: ["TypeScript", "Next.js", "Computer vision"],
@@ -136,7 +136,7 @@ export const projects: Record<
       slug: "the-chair",
       title: "The Chair",
       description:
-        "Motorized VEX V5 chair: eight-motor differential drive, custom CAD mounts, encoder-based steering feedback, telemetry plans, and safety controls. Nine public devlogs; 23 hours logged.",
+        "A rideable VEX V5 chair with an eight-motor differential drive, custom CAD mounts, three-Brain serial networking, calibrated steering and throttle, live telemetry, and fault-safe controls. Twelve public devlogs; 34 hours logged.",
       image: theChair,
       technologies: ["VEX V5", "CAD", "3D printing", "Controls"],
       link: {

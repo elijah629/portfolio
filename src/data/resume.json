@@ -122,13 +122,13 @@
       "name": "The Chair",
       "label": "Stardance Super Star project",
       "href": "https://stardance.hackclub.com/projects/4170",
-      "details": "Motorized VEX V5 chair with an eight-motor differential drivetrain, custom CAD/3D-printed mounts, encoder-based steering feedback, telemetry planning, and safety controls. Recorded gearing errors, interference, wobble, rebuilt supports, and working revisions across 9 public devlogs and 23 logged hours."
+      "details": "Built a rideable VEX V5 chair with an eight-motor differential drivetrain, custom CAD/3D-printed mounts, three-Brain serial networking, calibrated rotation-sensor throttle and steering, live diagnostics, and fault-safe controls. Reached reliable rider testing across 12 public devlogs and 34 logged hours."
     },
     {
       "name": "vexID",
       "label": "ML + iOS + VEX inventory",
       "href": "https://stardance.hackclub.com/projects/4161",
-      "details": "ML-assisted VEX V5 parts identification system. Expanded training data, added grouped inventory tags, improved tracking, fixed missing 3D mesh triangles, and moved AprilTag raycasts from an AR plane to the captured iOS mesh."
+      "details": "ML-assisted VEX V5 parts identification system documented across 4 devlogs and 12 logged hours. Fused LiDAR depth with repaired AR meshes, locked AprilTags through multi-view mesh raycasts, and built a Metal GPU backend for faster detection with a CPU fallback."
     },
     {
       "name": "sonai",

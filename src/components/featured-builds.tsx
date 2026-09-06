@@ -51,11 +51,11 @@ export function FeaturedBuilds() {
               <dl className="mt-6 grid grid-cols-2 gap-4 font-mono text-sm">
                 <div>
                   <dt className="text-muted-foreground">Public devlogs</dt>
-                  <dd className="mt-1 text-2xl">9</dd>
+                  <dd className="mt-1 text-2xl">12</dd>
                 </div>
                 <div>
                   <dt className="text-muted-foreground">Logged time</dt>
-                  <dd className="mt-1 text-2xl">23h</dd>
+                  <dd className="mt-1 text-2xl">34h</dd>
                 </div>
                 <div>
                   <dt className="text-muted-foreground">Drive motors</dt>
@@ -78,18 +78,22 @@ export function FeaturedBuilds() {
                 calculation estimated 24.8 lbf of pushing force.
               </p>
               <p>
-                The devlogs show the actual iteration: inaccurate caliper
-                measurements, a gear larger than its wheel, drivetrain contact
-                problems, steering-wheel wobble, and rebuilt supports. I
-                programmed an encoder-based steering wheel with return-to-center
-                resistance, a HUD plan, battery telemetry, an ignition/unlock
-                flow, dual-button drive input, and emergency-stop safety.
+                The latest logs close out both the hardware and software. Three
+                V5 Brains now communicate through a framed serial protocol with
+                startup handshakes, left/right assignment, health packets,
+                retries, timeouts, and fault recovery. A rotation sensor
+                replaced the broken throttle potentiometer; the controls now
+                support calibrated forward/reverse input, normal turns, turns in
+                place, and tuned steering feedback.
               </p>
               <p>
-                This matters more than a finished glamour shot. It records how I
-                selected gearing, fabricated mounts, found interference, changed
-                geometry, added safety constraints, and got a full drivetrain
-                moving under program control.
+                The chair now drives reliably with a rider. Its displays report
+                motor temperatures, faults, battery and link state, control
+                positions, and communication diagnostics without blocking the
+                control loop. Startup, parked, armed, and fault states keep the
+                system predictable, with a restart-only E-STOP. One intermittent
+                power-sharing issue remains under observation after low,
+                mismatched batteries caused a Brain to shut down during testing.
               </p>
               <div className="flex flex-wrap gap-3 pt-2">
                 <LinkButton href={site.stardanceChair}>
@@ -109,7 +113,7 @@ export function FeaturedBuilds() {
           <div className="grid gap-8 lg:grid-cols-[1fr_0.9fr]">
             <div>
               <p className="font-mono text-sm text-primary">
-                STARDANCE 2026 · 3 DEVLOGS · 4H
+                STARDANCE 2026 · 4 DEVLOGS · 12H
               </p>
               <h3 className="mt-2 text-4xl font-bold">vexID</h3>
               <div className="mt-5 space-y-4 leading-7 text-muted-foreground">
@@ -120,12 +124,20 @@ export function FeaturedBuilds() {
                   entering every variation by hand.
                 </p>
                 <p>
-                  I expanded the training dataset with real samples, improved
-                  tracking, and added grouped tags such as high-strength gears.
-                  On iOS I worked on 3D scanning, fixed missing mesh triangles,
-                  and moved AprilTag raycasts from a flat AR plane to the
-                  captured mesh. Latest pass improved UI and performance;
-                  scanning works, though mesh processing still needs tuning.
+                  The newest build fuses filtered LiDAR depth with the AR mesh,
+                  welds seams, removes bad geometry, preserves corners, repairs
+                  small holes, and rejects blurry frames. AprilTags lock after
+                  repeated viewpoints and mesh raycasts, while the scanner shows
+                  live depth, mapped surfaces, coverage, range, tracking
+                  quality, and lock progress.
+                </p>
+                <p>
+                  I also built a Metal backend for AprilTag detection after
+                  studying NVIDIA shaders and the C++ implementation. GPU
+                  detection raises frame rate and improves tag placement during
+                  3D scans, with a CPU fallback. Photo and scan workflows now
+                  share an Area model, and the viewer gained highlighting and
+                  better camera controls.
                 </p>
               </div>
               <div className="mt-6 flex flex-wrap gap-3">

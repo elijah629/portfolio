@@ -14,7 +14,7 @@ const achievements = [
   {
     title: "Stardance engineering logs",
     detail:
-      "Four public projects and 14 devlogs. The Chair alone records 23 hours across CAD, fabrication, controls, gearing, safety, and drivetrain revisions.",
+      "Four public projects and 18 devlogs. The Chair alone records 34 hours across CAD, fabrication, three-Brain networking, controls, safety, telemetry, and ride testing.",
     href: site.stardance,
     icon: SiHackclub,
   },
